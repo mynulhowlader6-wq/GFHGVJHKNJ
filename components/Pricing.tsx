@@ -39,7 +39,7 @@ const Pricing: React.FC<PricingProps> = ({ pricing }) => {
                 {tier.features.map((feature, fIdx) => (
                   <li key={fIdx} className="flex items-center gap-3">
                     <i className={`fa-solid fa-check text-sm ${tier.isPopular ? 'text-white' : 'text-purple-500'}`}></i>
-                    <span className={tier.isPopular ? 'text-purple-50) mb-8' : 'text-slate-400'}>{feature}</span>
+                    <span className={tier.isPopular ? 'text-purple-50' : 'text-slate-400'}>{feature}</span>
                   </li>
                 ))}
               </ul>
